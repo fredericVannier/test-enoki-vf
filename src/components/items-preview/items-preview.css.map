@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,YAAY,EAAE,CAAC;EACf,WAAW,EAAE,mBAAmB;CACnC",
+    "sources": [
+        "items-preview.scss"
+    ],
+    "names": [],
+    "file": "items-preview.css"
+}

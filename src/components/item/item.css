@@ -1,0 +1,23 @@
+.item-container .first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 200px;
+}
+
+.item-container .first-row .graphic-element {
+  width: 20px;
+  height: 3px;
+  background-color: #4300af;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=item.css.map */

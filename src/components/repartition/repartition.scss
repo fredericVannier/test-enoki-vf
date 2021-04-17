@@ -1,0 +1,10 @@
+.repartition-container {
+    display: flex;
+    flex-direction: column;
+
+    .repartition-content {
+        display: flex;
+        width: 600px;
+        justify-content: space-between;
+    }
+}

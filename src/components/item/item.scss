@@ -1,0 +1,21 @@
+.item-container {
+    width: 300px;
+    
+    .first-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+        overflow-x: visible;
+        align-content: flex-start;
+
+        .graphic-element {
+            width: 20px;
+            height: 3px;
+            background-color: rgb(67, 0, 175);
+            border-radius: 100px;
+        }
+    }
+
+}

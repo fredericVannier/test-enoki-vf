@@ -1,0 +1,79 @@
+.header-horizontal {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+  background-color: rgb(42, 42, 44);
+
+  .left-side {
+    display: flex;
+    width: 280px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+    .hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 33%;
+      margin-left: 11px;
+
+      .top {
+        background-color: rgb(199, 199, 199);
+        width: 18px;
+        height: 2px;
+      }
+
+      .middle {
+        background-color: rgb(199, 199, 199);
+        width: 18px;
+        height: 2px;
+      }
+
+      .bottom {
+        background-color: rgb(199, 199, 199);
+        width: 18px;
+        height: 2px;
+      }
+    }
+
+    .tab {
+      color: rgb(199, 199, 199);
+      font-weight: 700;
+    }
+
+    .vertical-separator {
+      width: 2px;
+      height: 100%;
+      background-color: rgb(31, 30, 30);
+    }
+  }
+
+  .right-side {
+    width: 250px;
+    
+    .user-info {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .username {
+        font-weight: 700;
+      }
+
+      .profile-picture {
+        width: 35px;
+        height: 35px;
+        background-image: url('../../logo.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+      }
+    }
+  }
+}

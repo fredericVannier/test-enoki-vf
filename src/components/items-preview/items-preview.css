@@ -1,0 +1,7 @@
+.items-preview {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-rule: 1px solid lightblue;
+          column-rule: 1px solid lightblue;
+}
+/*# sourceMappingURL=items-preview.css.map */

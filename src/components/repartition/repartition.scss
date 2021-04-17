@@ -1,8 +1,10 @@
 .repartition-container {
     display: flex;
     flex-direction: column;
-
+    width: 70%;
+    
     .repartition-content {
+        width: 100%;
         display: flex;
         width: 600px;
         justify-content: space-between;

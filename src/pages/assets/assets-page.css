@@ -1,0 +1,16 @@
+#assets-table {
+  text-align: center;
+  width: 100vw;
+  font-size: 10pt;
+}
+
+#assets-table .table-header {
+  font-size: 10pt;
+  color: #999999;
+}
+
+.logo-assets {
+  width: 20px;
+  height: auto;
+}
+/*# sourceMappingURL=assets-page.css.map */

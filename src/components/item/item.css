@@ -1,3 +1,7 @@
+.item-container {
+  width: 100%;
+}
+
 .item-container .first-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,9 +13,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 200px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+  overflow-x: visible;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .item-container .first-row .graphic-element {

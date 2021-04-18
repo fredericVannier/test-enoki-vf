@@ -13,7 +13,7 @@ class AssetsPage extends Component {
   }
 
   renderTableData() {
-    return this.state.assets.map((element, index, e) => {
+    return this.state.assets.map((element, index) => {
       const {
         id,
         name,
@@ -24,7 +24,6 @@ class AssetsPage extends Component {
         variation,
         logo,
       } = element;
-      console.log("variation", variation);
 
       return (
         <tr className="table-row" key={id}>
@@ -37,7 +36,9 @@ class AssetsPage extends Component {
           <td>{`${Date.parse(entry_date)}`}</td>
           <td>{buy_price}$</td>
           <td>{actual_price}$</td>
-          <td>{variation}</td>
+          <td className={variation.startsWith("+") ? "positive" : "negative"}>
+            {variation}
+          </td>
         </tr>
       );
     });
@@ -59,7 +60,7 @@ class AssetsPage extends Component {
           <div className="assets-button"></div>
         </div>
 
-        <p className='basic-text'>
+        <p className="basic-text">
           Tracker allows you to get live access to the price movements of all
           popular stocks, cryptocurrencies, ETFs, indices, mutual funds, bonds,
           futures, and options. Follow you favorites and get notified when a

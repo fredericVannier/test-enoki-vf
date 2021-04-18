@@ -44,7 +44,11 @@
   background-size: 40%;
 }
 
-.assets-container .test {
+.assets-container .positive {
+  color: #00b800;
+}
+
+.assets-container .negative {
   color: red;
 }
 

@@ -13,7 +13,7 @@ class AssetsPage extends Component {
   }
 
   renderTableData() {
-    return this.state.assets.map((element, index) => {
+    return this.state.assets.map((element, index, e) => {
       const {
         id,
         name,
@@ -24,7 +24,8 @@ class AssetsPage extends Component {
         variation,
         logo,
       } = element;
-      console.log("element", element);
+      console.log("variation", variation);
+
       return (
         <tr className="table-row" key={id}>
           <td>
@@ -51,10 +52,25 @@ class AssetsPage extends Component {
 
   render() {
     return (
-      <div>
+      <div className="assets-container">
+        <div className="assets-title-container">
+          <div className="assets-picture"></div>
+          <h2 className="assets-title">Tracking of your assets</h2>
+          <div className="assets-button"></div>
+        </div>
+
+        <p className='basic-text'>
+          Tracker allows you to get live access to the price movements of all
+          popular stocks, cryptocurrencies, ETFs, indices, mutual funds, bonds,
+          futures, and options. Follow you favorites and get notified when a
+          significant change has happened for an asset you follow. No delays,
+          always in the know. A clear overview of your total portfolio balance,
+          profit & loss during various time periods.
+        </p>
+
         <table id="assets-table">
           <tbody>
-            <tr className="table-header">
+            <tr className="table-row table-header">
               <th></th>
               <th>ID</th>
               <th>Name</th>

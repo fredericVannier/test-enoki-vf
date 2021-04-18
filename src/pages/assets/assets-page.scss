@@ -1,14 +1,71 @@
-#assets-table {
-    text-align: center;
-    width: 100vw;
-    font-size: 10pt;
-    
-    .table-header {
-        font-size: 10pt;
-        color: rgb(153, 153, 153);
+.assets-container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 0 auto;
+
+  .assets-title-container {
+      width: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+    .assets-picture {
+        background-image: url('../../logo.svg');
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
     }
-}
-.logo-assets {
+    
+    .assets-button {
+        height: 50px;
+        width: 50px;
+        background-color: rgb(67, 0, 175);
+        border-radius: 50px;
+        background-image: url('./plus-button.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40%;
+    }
+  }
+
+  .test {
+      color: red;
+  }
+
+  .basic-text {
+      color: white;
+      font-size: 10pt;
+      text-align: justify;
+      margin-bottom: 30px;
+  }
+
+  #assets-table {
+    text-align: center;
+    font-size: 10pt;
+
+    .table-header {
+      font-size: 10pt;
+      color: rgb(153, 153, 153);
+    }
+
+    .table-row {
+      height: 35px;
+
+      td {
+        border-bottom: 1px solid rgb(53, 53, 53);
+      }
+
+      th {
+        border-bottom: 1px solid rgb(53, 53, 53);
+      }
+    }
+  }
+  .logo-assets {
     width: 20px;
     height: auto;
+  }
 }

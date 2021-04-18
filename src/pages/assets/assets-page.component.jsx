@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Popup from "../../components/popup/Popup.component";
 
 import ASSETS_DATA from "./../../data/page-2-assets.json";
 
@@ -9,10 +10,11 @@ class AssetsPage extends Component {
     super(props);
     this.state = {
       assets: ASSETS_DATA,
+      popupOpen: false,
     };
   }
 
-  renderTableData() {
+  renderTableData = () => {
     return this.state.assets.map((element, index) => {
       const {
         id,
@@ -42,14 +44,22 @@ class AssetsPage extends Component {
         </tr>
       );
     });
-  }
+  };
 
-  renderTableHeader() {
+  renderTableHeader = () => {
     let header = Object.keys(this.state.assets[0]);
     return header.map((key, index) => {
       return <th key={index}>{key.toUpperCase()}</th>;
     });
-  }
+  };
+
+  handleClick = () => {
+    this.setState({ popupOpen: !this.state.popupOpen });
+  };
+
+  setButtonPopup = () => {
+    this.setState({ popupOpen: false });
+  };
 
   render() {
     return (
@@ -57,7 +67,7 @@ class AssetsPage extends Component {
         <div className="assets-title-container">
           <div className="assets-picture"></div>
           <h2 className="assets-title">Tracking of your assets</h2>
-          <div className="assets-button"></div>
+          <button className="assets-button" onClick={this.handleClick}></button>
         </div>
 
         <p className="basic-text">
@@ -84,6 +94,12 @@ class AssetsPage extends Component {
             {this.renderTableData()}
           </tbody>
         </table>
+
+        <Popup
+          open={this.state.popupOpen}
+          assets={this.state.assets}
+          setTrigger={this.setButtonPopup}
+        />
       </div>
     );
   }

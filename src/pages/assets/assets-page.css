@@ -44,6 +44,10 @@
   background-size: 40%;
 }
 
+.assets-container .assets-title-container .assets-button:hover {
+  cursor: pointer;
+}
+
 .assets-container .positive {
   color: #00b800;
 }

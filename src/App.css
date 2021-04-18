@@ -11,3 +11,19 @@ body {
 a {
     text-decoration: none;
 }
+
+input {
+    margin-top: 10px;
+    border-radius: 50px;
+    height: 35px;
+    background-color: rgb(51, 51, 58);
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 9pt;
+    padding-left: 15px;
+}
+
+button {
+    border: none;
+}

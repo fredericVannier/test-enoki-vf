@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 import "./header-horizontal.scss";
 
@@ -11,8 +12,8 @@ const HeaderHorizontal = () => (
         <div className="bottom"></div>
       </div>
       <div className="vertical-separator"></div>
-      <span className="tab">Dashboard</span>
-      <span className="tab">Assets</span>
+      <Link className="tab" to='/'>Dashboard</Link>
+      <Link className="tab" to='/assets'>Assets</Link>
     </div>
 
     <div className="right-side">

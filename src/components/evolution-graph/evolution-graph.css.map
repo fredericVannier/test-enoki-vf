@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACrB,KAAK,EAAE,IAAI;CAKV;;AAND,AAEA,oBAFoB,CAEpB,gBAAgB,CAAC;EACb,KAAK,EAAE,GAAG;CAEX",
+    "sources": [
+        "evolution-graph.scss"
+    ],
+    "names": [],
+    "file": "evolution-graph.css"
+}

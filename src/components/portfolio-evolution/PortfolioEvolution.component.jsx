@@ -1,4 +1,5 @@
 import React from "react";
+import EvolutionGraph from "../evolution-graph/Evolution-graph.component";
 
 import "./portfolio-evolution.scss";
 
@@ -15,7 +16,9 @@ const PortfolioEvolution = () => (
 
       <div className="calendar">calendar</div>
     </div>
-    <div className="evolution-chart"></div>
+    <div className="evolution-chart">
+    <EvolutionGraph />
+    </div>
   </div>
 );
 

@@ -1,0 +1,110 @@
+.header-horizontal {
+  height: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  background-color: #2a2a2c;
+}
+
+.header-horizontal .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header-horizontal .left-side .hamburger-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 33%;
+  margin-left: 11px;
+}
+
+.header-horizontal .left-side .hamburger-menu .top {
+  background-color: #c7c7c7;
+  width: 18px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+.header-horizontal .left-side .hamburger-menu .middle {
+  background-color: #c7c7c7;
+  width: 18px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+.header-horizontal .left-side .hamburger-menu .bottom {
+  background-color: #c7c7c7;
+  width: 18px;
+  height: 2px;
+  border-radius: 5px;
+}
+
+.header-horizontal .left-side .tab {
+  color: #c7c7c7;
+  font-weight: 600;
+}
+
+.header-horizontal .left-side .vertical-separator {
+  width: 2px;
+  height: 100%;
+  background-color: #1f1e1e;
+}
+
+.header-horizontal .right-side {
+  width: 250px;
+}
+
+.header-horizontal .right-side .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-horizontal .right-side .user-info .username {
+  font-weight: 600;
+}
+
+.header-horizontal .right-side .user-info .profile-picture {
+  width: 35px;
+  height: 35px;
+  background-image: url("../../logo.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=header-horizontal.css.map */

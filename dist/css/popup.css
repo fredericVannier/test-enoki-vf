@@ -1,0 +1,119 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-container .popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: #202020;
+  border-radius: 15px;
+  border: 1px solid rgba(98, 98, 98, 0.4);
+}
+
+.popup-container .popup-inner .close-btn {
+  cursor: pointer;
+}
+
+.popup-container .popup-inner .close-btn:hover {
+  color: #ffbb00;
+}
+
+.popup-container .popup-inner .popup-separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(98, 98, 98, 0.4);
+}
+
+.popup-container .popup-inner .inputs-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup-container .popup-inner .inputs-field .hint-label {
+  margin-top: 20px;
+}
+
+.popup-container .popup-inner .inputs-field .input-with-hint {
+  width: 100%;
+}
+
+.popup-container .popup-inner .inputs-field .middle-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popup-container .popup-inner .inputs-field .middle-field .date-field label {
+  font-size: 15pt;
+}
+
+.popup-container .popup-inner .inputs-field .middle-field .quantity-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.popup-container .popup-inner .inputs-field .middle-field .date-field label {
+  color: #fff;
+}
+
+.popup-container .popup-inner .inputs-field .price-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup-container .popup-inner .inputs-field .form-btn {
+  width: 130px;
+  height: 40px;
+  margin: 15px auto;
+  border-radius: 20px;
+  background-color: #5c4ed4;
+  color: #fff;
+  font-weight: 700;
+  font-size: 8pt;
+}
+
+.popup-container .popup-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=popup.css.map */

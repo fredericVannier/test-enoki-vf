@@ -1,0 +1,31 @@
+.item-container {
+  width: 100%;
+}
+
+.item-container .first-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+  overflow-x: visible;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.item-container .first-row .graphic-element {
+  width: 20px;
+  height: 3px;
+  background-color: #5c4ed4;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=item.css.map */

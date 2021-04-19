@@ -8,7 +8,7 @@ const EvolutionGraph = () => {
   const assets = DATA_ASSETS;
   let series = [];
 
-  const test = () => {
+  const setSeries = () => {
     assets.map((element) => {
       const myDataPerso = {
         name: `${element.name}`,
@@ -24,7 +24,8 @@ const EvolutionGraph = () => {
     });
   };
 
-  test();
+  setSeries();
+
   const options = {
     chart: {
       height: 350,
@@ -93,7 +94,6 @@ const EvolutionGraph = () => {
         series={series}
         type="area"
         height={350}
-        width='100%'
       />
     </div>
   );

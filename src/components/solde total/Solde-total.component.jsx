@@ -22,7 +22,7 @@ const sum = total.reduce(function (a, b) {
 const SoldeTotal = () => (
   <div className="solde-total-container">
     <h4 className="title">Solde total</h4>
-    <span className="solde">{`${sum} €`}</span>{" "}
+    <span className="solde">{`${sum} $`}</span>{" "}
     <span className="info-text">Total</span>
   </div>
 );

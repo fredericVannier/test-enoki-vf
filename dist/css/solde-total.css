@@ -1,9 +1,14 @@
 .solde-total-container {
-  width: 30%;
+  height: 400px;
 }
 
 .solde-total-container .solde {
   font-size: 3rem;
+  font-weight: bold;
+}
+
+.solde-total-container .rounded {
+  color: #00ff95;
   font-weight: bold;
 }
 /*# sourceMappingURL=solde-total.css.map */

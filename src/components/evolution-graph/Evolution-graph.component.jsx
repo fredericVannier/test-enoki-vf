@@ -17,10 +17,7 @@ const EvolutionGraph = () => {
           { x: "04-19-2021 GMT", y: `${element.actual_price}` },
         ],
       };
-
       series.push(myDataPerso);
-
-      console.log("ma serie perso", myDataPerso);
     });
   };
 
@@ -80,6 +77,7 @@ const EvolutionGraph = () => {
       x: {
         format: "dd/MM/yy",
       },
+      theme: "dark",
     },
     noData: {
       text: "Loading...",

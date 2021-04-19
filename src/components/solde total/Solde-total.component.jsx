@@ -93,7 +93,7 @@ const SoldeTotal = () => (
     <span className="solde">{`${actualSum} $`}</span>{" "}
     <span className="info-text">Total</span>
     <br />
-    <span className="rounded">{`${rounded} %`}</span>
+    <span className="rounded">{`+${rounded} %`}</span>
     <ReactApexChart
       className="solde-chart"
       options={options}

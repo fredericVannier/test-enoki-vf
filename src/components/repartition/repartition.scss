@@ -1,14 +1,13 @@
 .repartition-container {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  height: 400px;
   justify-content: space-evenly;
   
   .repartition-content {
     width: 100%;
     display: flex;
-    width: 650px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     .items-preview {

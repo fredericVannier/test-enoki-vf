@@ -4,7 +4,7 @@ import Directory from "../../components/directory/Directory.component";
 import "./homepage.scss";
 
 const Homepage = () => (
-  <div className="homepage">
+  <div className="homepage-container">
     <Directory />
   </div>
 );

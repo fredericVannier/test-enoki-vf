@@ -4,7 +4,7 @@ import "./repartition-graph.scss";
 
 import ReactApexChart from "react-apexcharts";
 import DATA_ASSETS from "../../data/page-2-assets.json";
-import { NoEncryption } from "@material-ui/icons";
+
 
 const assets = DATA_ASSETS;
 const percentageArr = [];
@@ -14,6 +14,13 @@ const series = percentageArr;
 const options = {
   chart: {
     type: "donut",
+  },
+  plotOptions: {
+    pie: {
+      donut: {
+        size: "75%",
+      },
+    },
   },
   colors: [
     "rgb(92, 78, 212)",
@@ -49,9 +56,8 @@ const options = {
   },
   stroke: {
     show: true,
-    curve: "smooth",
     colors: ["rgb(31, 30, 30)"],
-    width: 4,
+    width: 5,
   },
   legend: {
     show: false,
@@ -91,11 +97,18 @@ percentageData();
 
 const RepartitionGraph = () => (
   <div className="repartition-graph-container">
-    <ReactApexChart options={options} series={series} type="donut" className='repartition-chart' />
+  
+    <ReactApexChart
+      options={options}
+      series={series}
+      type="donut"
+      className="repartition-chart"
+    />
 
-    <div className='sum-repartition'>
-    <span className="solde">{`${sum} $`}</span>{" "}
-    <span className="info-text">USD</span></div>
+    <div className="sum-repartition">
+      <span className="solde">{`${sum} $`}</span>{" "}
+      <span className="info-text">USD</span>
+    </div>
   </div>
 );
 

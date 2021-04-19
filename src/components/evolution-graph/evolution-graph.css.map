@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACrB,KAAK,EAAE,IAAI;CAKV;;AAND,AAEA,oBAFoB,CAEpB,gBAAgB,CAAC;EACb,KAAK,EAAE,GAAG;CAEX",
+    "mappings": "AAAA,AAEA,oBAFoB,CAEpB,gBAAgB,CAAC;EACb,KAAK,EAAE,IAAI;CACZ",
     "sources": [
         "evolution-graph.scss"
     ],

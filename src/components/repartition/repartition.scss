@@ -3,16 +3,17 @@
   flex-direction: column;
   width: 60vw;
   justify-content: space-evenly;
-
+  
   .repartition-content {
     width: 100%;
     display: flex;
-    width: 600px;
+    width: 650px;
     justify-content: space-between;
+    align-items: center;
 
     .items-preview {
       column-count: 2;
-      column-gap: 50px;
+      column-gap: 10px;
     }
   }
 }

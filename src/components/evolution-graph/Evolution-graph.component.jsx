@@ -5,21 +5,42 @@ import DATA_ASSETS from "./../../data/page-2-assets.json";
 import "./evolution-graph.scss";
 
 const EvolutionGraph = () => {
-  const series = [
-    {
-      name: "tesssst",
-      data: [31, 40, 28, 51, 42, 109, 100],
-    },
-    {
-      name: "testtttt2",
-      data: [11, 32, 45, 32, 34, 52, 41],
-    },
-  ];
+  const assets = DATA_ASSETS;
+  let series = [];
+
+  const test = () => {
+    assets.map((element) => {
+      const myDataPerso = {
+        name: `${element.name}`,
+        data: [
+          { x: `${element.entry_date}`, y: `${element.buy_price}` },
+          { x: "04-19-2021 GMT", y: `${element.actual_price}` },
+        ],
+      };
+
+      series.push(myDataPerso);
+
+      console.log("ma serie perso", myDataPerso);
+    });
+  };
+
+  test();
   const options = {
     chart: {
       height: 350,
       type: "area",
       width: "100%",
+      toolbar: {
+        show: false,
+      },
+    },
+    yaxis: {
+      tickAmount: 5,
+      labels: {
+        formatter: function (value) {
+          return value + " K";
+        },
+      },
     },
     dataLabels: {
       enabled: false,
@@ -29,23 +50,34 @@ const EvolutionGraph = () => {
     },
     color: {},
     xaxis: {
-      categories: [
-        "1",
-        "5",
-        "10",
-        "15",
-        "20",
-        "25",
-        "30",
-      ],
+      type: "datetime",
+      tickAmount: 10,
     },
-    colors: ["rgb(92, 78, 212)", 'rgb(73, 73, 73)'],
+    colors: [
+      "rgb(92, 78, 212)",
+      "rgb(255, 217, 0)",
+      "rgb(41, 184, 41)",
+      "rgb(0, 255, 179)",
+      "rgb(255, 145, 0)",
+      "rgb(255, 0, 85)",
+      "rgb(0, 59, 253)",
+      "rgb(0, 174, 255)",
+    ],
     fill: {
-        colors: ["rgba(92, 78, 212, 0.02)", 'rgba(73, 73, 73, 0.02)']
+      colors: [
+        "rgba(92, 78, 212, 0.01)",
+        "rgba(255, 217, 0, 0.01)",
+        "rgba(41, 184, 41, 0.01)",
+        "rgba(0, 255, 179, 0.01)",
+        "rgba(255, 145, 0, 0.01)",
+        "rgba(255, 0, 85, 0.01)",
+        "rgba(0, 59, 253, 0.01)",
+        "rgba(0, 174, 255, 0.01)",
+      ],
     },
     tooltip: {
       x: {
-        format: "dd/MM/yy HH:mm",
+        format: "dd/MM/yy",
       },
     },
     noData: {
@@ -61,6 +93,7 @@ const EvolutionGraph = () => {
         series={series}
         type="area"
         height={350}
+        width='100%'
       />
     </div>
   );

@@ -16,10 +16,10 @@ class ItemPreview extends Component {
 
     return (
       <div className="items-preview">
-        {assets.map((element) => {
+        {assets.map((element, index) => {
           const percentage = (element.quantity * 100) / 50;
           return (
-            <Item percentage={percentage} name={element.name} id={element.id} />
+            <Item key={index} percentage={percentage} name={element.name} id={element.id} />
           );
         })}
       </div>

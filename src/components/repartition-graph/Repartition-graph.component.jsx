@@ -18,7 +18,7 @@ const options = {
   plotOptions: {
     pie: {
       donut: {
-        size: "75%",
+        size: "85%",
       },
     },
   },

@@ -9,7 +9,7 @@ const EvolutionGraph = () => {
   let series = [];
 
   const setSeries = () => {
-    assets.map((element) => {
+    assets.forEach((element) => {
       const myDataPerso = {
         name: `${element.name}`,
         data: [
@@ -36,7 +36,7 @@ const EvolutionGraph = () => {
       tickAmount: 5,
       labels: {
         formatter: function (value) {
-          return value + " K";
+          return value + " $";
         },
       },
     },

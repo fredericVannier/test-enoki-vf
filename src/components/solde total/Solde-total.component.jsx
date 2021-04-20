@@ -11,7 +11,7 @@ const assets = DATA_ASSETS;
 let series = [];
 
 const totalPrice = () => {
-  assets.map((element) => {
+  assets.forEach((element) => {
     actualTotal.push(element.actual_price);
     firstTotal.push(element.buy_price);
   });
@@ -40,6 +40,7 @@ const setSeries = () => {
   };
   series.push(seriesData);
 };
+
 
 setSeries();
 

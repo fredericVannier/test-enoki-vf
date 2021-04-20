@@ -97,7 +97,7 @@ class AssetsPage extends Component {
 
         <Popup
           open={this.state.popupOpen}
-          assets={this.state.assets}
+          assets={this.state.assets} 
           setTrigger={this.setButtonPopup}
         />
       </div>

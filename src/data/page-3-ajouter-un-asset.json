@@ -1,0 +1,27 @@
+[
+  {
+    "id": "ETH",
+    "name": "Etherum",
+    "logo": "https://logo-marque.com/wp-content/uploads/2020/12/Ethereum-Symbole-650x366.png"
+  },
+  {
+    "id": "USDCOIN",
+    "name": "USD Coin",
+    "logo": "https://bitcoinmatin.fr/wp-content/uploads/2019/10/usdc-logo.png"
+  },
+  {
+    "id": "AAVE",
+    "name": "Aave",
+    "logo": "https://www.hippomagazine.world/wp-content/uploads/2021/03/AAVELogo_Supplied_250x250.png"
+  },
+  {
+    "id": "DASH",
+    "name": "Dash",
+    "logo": "https://cryptonaute.fr/wp-content/uploads/2020/05/Logo-de-la-crypto-DASH.png"
+  },
+  {
+    "id": "ELROND",
+    "name": "Elrond",
+    "logo": "https://picoloresearch.com/upload/12-2020/2020_12_28_14_41_19_ZSmhvuYRXo.png"
+  }
+]

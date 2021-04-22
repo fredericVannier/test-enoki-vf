@@ -158,7 +158,9 @@
           color: #fff;
           font-weight: 700;
           font-size: 8pt;
-          text-align: center;
+          left: 50%;
+          position: relative;
+          transform: translateX(-50%);
         }
       }
     }

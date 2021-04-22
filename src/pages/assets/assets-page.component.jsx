@@ -19,7 +19,7 @@ class AssetsPage extends Component {
       entry_date: "",
       buy_price: 0,
       actual_price: 0,
-      variation: "",
+      variation: "+9%",
       logo: "",
     };
   }
@@ -57,7 +57,9 @@ class AssetsPage extends Component {
           <td>{dateStr}</td>
           <td>{buy_price}$</td>
           <td>{actual_price}$</td>
-          <td>{variation}</td>
+          <td className={variation.startsWith("+") ? "positive" : "negative"}>
+            {variation}
+          </td>
         </tr>
       );
     });
@@ -74,6 +76,7 @@ class AssetsPage extends Component {
       entry_date,
       id,
       logo,
+      variation,
     } = this.state;
     const newData = assets;
     const joined = newData.concat({
@@ -83,6 +86,7 @@ class AssetsPage extends Component {
       buy_price: buy_price,
       logo: logo,
       id: id,
+      variation: variation,
     });
     this.setState({ assets: joined }, () => console.log("Assets updated"));
     this.setState({ popupOpen: !this.state.popupOpen });

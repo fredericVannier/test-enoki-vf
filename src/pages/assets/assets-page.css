@@ -198,7 +198,10 @@
   color: #fff;
   font-weight: 700;
   font-size: 8pt;
-  text-align: center;
+  left: 50%;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .assets-container .popup-container .popup-header {
